@@ -38,7 +38,8 @@
     "shared-types": "*",
     "swagger-ui-dist": "^5.29.4",
     "swagger-ui-express": "^5.0.0",
-    "typeorm": "^0.3.27"
+    "typeorm": "^0.3.27",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.0",
@@ -46,8 +47,10 @@
     "@nestjs/testing": "^11.0.0",
     "@types/express": "^4.17.21",
     "@types/jest": "^29.5.11",
+    "@types/multer": "^2.0.0",
     "@types/node": "^20.11.0",
     "@types/supertest": "^6.0.2",
+    "@types/uuid": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
     "eslint": "^8.56.0",
