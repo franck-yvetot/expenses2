@@ -52,4 +52,106 @@
 body {
   min-height: 100dvh;
   font-family: 'Inter', sans-serif;
+
+/* Reusable Component Classes */
+@layer components {
+  .category-icon {
+    @apply flex items-center justify-center w-12 h-12 rounded-full;
+    background-color: rgba(64, 181, 157, 0.1);
+    color: #40B59D;
+  }
+
+  .dark .category-icon {
+    background-color: rgba(64, 181, 157, 0.2);
+  }
+
+  .category-icon-sm {
+    @apply flex items-center justify-center w-8 h-8 rounded-full;
+    background-color: rgba(64, 181, 157, 0.1);
+    color: #40B59D;
+  }
+
+  .dark .category-icon-sm {
+    background-color: rgba(64, 181, 157, 0.2);
+  }
+
+  .expense-card {
+    @apply rounded-lg p-4;
+    background-color: #FFFFFF;
+  }
+
+  .dark .expense-card {
+    background-color: #1F2F2B;
+  }
+
+  .expense-title {
+    @apply font-semibold;
+    color: #111827;
+  }
+
+  .dark .expense-title {
+    color: #F3F4F6;
+  }
+
+  .expense-subtitle {
+    @apply text-sm;
+    color: #6B7280;
+  }
+
+  .dark .expense-subtitle {
+    color: #9CA3AF;
+  }
+
+  .page-title {
+    @apply text-2xl font-bold;
+    color: #111827;
+  }
+
+  .dark .page-title {
+    color: #F3F4F6;
+  }
+
+  .section-title {
+    @apply text-lg font-bold;
+    color: #111827;
+  }
+
+  .dark .section-title {
+    color: #F3F4F6;
+  }
+
+  .btn-primary {
+    @apply w-full flex items-center justify-center gap-2 h-12 px-6 font-bold rounded-lg shadow-lg transition-colors;
+    background-color: #40B59D;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: rgba(64, 181, 157, 0.9);
+  }
+
+  .btn-secondary {
+    @apply w-full flex items-center justify-center gap-2 h-12 px-6 font-bold rounded-lg border transition-colors;
+    background-color: #FFFFFF;
+    color: #40B59D;
+    border-color: #E5E7EB;
+  }
+
+  .dark .btn-secondary {
+    background-color: #1F2F2B;
+    border-color: #374151;
+  }
+
+  .btn-secondary:hover {
+    background-color: #F9FAFB;
+  }
+
+  .dark .btn-secondary:hover {
+    background-color: rgba(31, 47, 43, 0.8);
+  }
+
+  .expense-status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+}
 }
