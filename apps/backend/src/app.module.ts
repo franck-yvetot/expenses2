@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ExpenseReportModule } from './modules/expense-reports/expense-report.module';
 import { ExpenseModule } from './modules/expenses/expense.module';
+import { AttachmentModule } from './modules/attachments/attachment.module';
 import { ExpenseReport } from './modules/expense-reports/expense-report.entity';
 import { Expense } from './modules/expenses/expense.entity';
 import { Attachment } from './modules/attachments/attachment.entity';
@@ -53,6 +54,7 @@ import { Attachment } from './modules/attachments/attachment.entity';
     }),
     ExpenseReportModule,
     ExpenseModule,
+    AttachmentModule,
   ],
   controllers: [AppController],
   providers: [AppService],
